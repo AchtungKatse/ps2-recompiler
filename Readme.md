@@ -20,3 +20,29 @@ Currently,
 - [ ] Graphics Reimplementation
 - [ ] Input Reimplementation
 - [ ] Sound Reimplementation
+
+# Building
+1. Clone the repository
+```
+    git clone https://github.com/AchtungKatse/ps2-recompiler.git --recurse-submodules
+```
+2. Build the recompiler
+```
+    mkdir build && cd build && cmake ..
+    make -j [thread count] recompiler
+```
+3. Run the recompiler (Requires a config file and splits)
+```
+    ./recompiler [path to config.yaml] [output path]
+```
+4. Rerun cmake
+This allows the program to identify generated code and link to libraries required for the recompilation.
+```
+    cmake ..
+```
+5. Build and run the recompiled game
+```
+    make -j [thread count]
+    ./recompiled
+```
+

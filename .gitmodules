@@ -1,6 +1,3 @@
 [submodule "dependencies/rabbitizer"]
 	path = dependencies/rabbitizer
 	url = https://github.com/Decompollaborate/rabbitizer.git
-[submodule "dependencies/libcyaml"]
-	path = dependencies/libcyaml
-	url = https://github.com/tlsa/libcyaml.git

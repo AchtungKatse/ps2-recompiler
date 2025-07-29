@@ -1,0 +1,1 @@
+char* ConvertDiskPath(char* path);
